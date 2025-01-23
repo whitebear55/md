@@ -1,0 +1,10 @@
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:[m[K In function ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_PNT_MAIN_DATA_t*)[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:127:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+  127 |     v_left*= node.getRobotParamData().[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:128:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+  128 |     v_right*= node.getRobotParamData().[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:104: CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o] 오류 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+gmake: *** [Makefile:146: all] 오류 2

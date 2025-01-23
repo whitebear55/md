@@ -1,0 +1,7 @@
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:[m[K In function ‘[01m[Kint MdReceiveProc(MDRobotNode&)[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:113:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurr_pid_pnt_main_data[m[K’ was not declared in this scope
+  113 |                 memcpy((char *)&[01;31m[Kcurr_pid_pnt_main_data[m[K, (char *)pRcvData, sizeof(PID_PNT_MAIN_DATA_t));
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:90: CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o] 오류 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+gmake: *** [Makefile:146: all] 오류 2

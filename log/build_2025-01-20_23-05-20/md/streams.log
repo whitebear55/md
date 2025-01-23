@@ -1,0 +1,185 @@
+[0.007s] Invoking command in '/home/hyoin/service/build/md': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8
+[0.025s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.112s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.119s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.143s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.145s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.149s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.156s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.165s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.187s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.188s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.253s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.286s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.304s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.317s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.329s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.342s] -- Found serial: 1.2.1 (/home/hyoin/service/install/serial/share/serial/cmake)
+[0.343s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.584s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.866s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.971s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.985s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.000s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.000s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.000s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.032s] -- Configuring done
+[1.058s] -- Generating done
+[1.067s] -- Build files have been written to: /home/hyoin/service/build/md
+[1.086s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_generator_c[0m
+[1.092s] [  1%] Built target md__cpp
+[1.093s] [ 11%] Built target md__rosidl_generator_c
+[1.099s] [ 11%] Built target ament_cmake_python_symlink_md
+[1.101s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_cpp[0m
+[1.101s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_fastrtps_cpp[0m
+[1.101s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_introspection_cpp[0m
+[1.101s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_introspection_c[0m
+[1.102s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_c[0m
+[1.102s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_fastrtps_c[0m
+[1.112s] [ 31%] Built target md__rosidl_typesupport_introspection_c
+[1.112s] [ 31%] Built target md__rosidl_typesupport_cpp
+[1.112s] [ 41%] Built target md__rosidl_typesupport_introspection_cpp
+[1.113s] [ 50%] Built target md__rosidl_typesupport_c
+[1.113s] [ 60%] Built target md__rosidl_typesupport_fastrtps_cpp
+[1.114s] [ 70%] Built target md__rosidl_typesupport_fastrtps_c
+[1.121s] [35m[1mConsolidate compiler generated dependencies of target md_robot_node[0m
+[1.127s] [ 70%] Built target md
+[1.134s] [ 72%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o[0m
+[1.134s] [ 74%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o[0m
+[1.136s] [ 76%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o[0m
+[1.142s] [ 78%] Built target md__py
+[1.149s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_generator_py[0m
+[1.157s] [ 86%] Built target md__rosidl_generator_py
+[1.167s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_introspection_c__pyext[0m
+[1.167s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_c__pyext[0m
+[1.167s] [35m[1mConsolidate compiler generated dependencies of target md__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.178s] [ 98%] Built target md__rosidl_typesupport_introspection_c__pyext
+[1.179s] [ 98%] Built target md__rosidl_typesupport_fastrtps_c__pyext
+[1.179s] [ 98%] Built target md__rosidl_typesupport_c__pyext
+[1.266s] running egg_info
+[1.267s] writing md.egg-info/PKG-INFO
+[1.267s] writing dependency_links to md.egg-info/dependency_links.txt
+[1.267s] writing top-level names to md.egg-info/top_level.txt
+[1.268s] reading manifest file 'md.egg-info/SOURCES.txt'
+[1.269s] writing manifest file 'md.egg-info/SOURCES.txt'
+[1.286s] [ 98%] Built target ament_cmake_python_build_md_egg
+[2.759s] In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:2[m[K:
+[2.759s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:32:[m[K [01;31m[Kerror: [m[K‘[01m[KMdRobot_Status_msg[m[K’ is not a member of ‘[01m[Kmd::msg[m[K’
+[2.759s]    84 |     rclcpp::Publisher<md::msg::[01;31m[KMdRobot_Status_msg[m[K>::SharedPtr md_robot_status_msg_pub_;
+[2.759s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.759s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.759s]    84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg[01;31m[K>[m[K::SharedPtr md_robot_status_msg_pub_;
+[2.759s]       |                                                  [01;31m[K^[m[K
+[2.759s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.759s]    84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::[01;31m[KSharedPtr[m[K md_robot_status_msg_pub_;
+[2.759s]       |                                                     [01;31m[K^~~~~~~~~[m[K
+[2.759s]       |                                                              [32m[K;[m[K
+[2.761s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ does not name a type
+[2.762s]    84 |   rclcpp::Publisher<md::msg::MdRobot_Status_msg>::SharedPtr [01;31m[Kmd_robot_status_msg_pub_[m[K;
+[2.762s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.762s] 
+[2.792s] In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:3[m[K:
+[2.792s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:32:[m[K [01;31m[Kerror: [m[K‘[01m[KMdRobot_Status_msg[m[K’ is not a member of ‘[01m[Kmd::msg[m[K’
+[2.792s]    84 |     rclcpp::Publisher<md::msg::[01;31m[KMdRobot_Status_msg[m[K>::SharedPtr md_robot_status_msg_pub_;
+[2.792s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.792s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.792s]    84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg[01;31m[K>[m[K::SharedPtr md_robot_status_msg_pub_;
+[2.792s]       |                                                  [01;31m[K^[m[K
+[2.792s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.792s]    84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::[01;31m[KSharedPtr[m[K md_robot_status_msg_pub_;
+[2.792s]       |                                                     [01;31m[K^~~~~~~~~[m[K
+[2.792s]       |                                                              [32m[K;[m[K
+[2.794s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ does not name a type
+[2.794s]    84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::SharedPtr [01;31m[Kmd_robot_status_msg_pub_[m[K;
+[2.794s]       |                                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.824s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In constructor ‘[01m[KMDRobotNode::MDRobotNode()[m[K’:
+[2.824s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmd_robot_status_msg[m[K’?
+[2.824s]    40 |     [01;31m[Kmd_robot_status_msg_pub_[m[K = this->create_publisher<md::msg::md_robot_status_msg_>("robot_status", 10);
+[2.824s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.825s]       |     [32m[Kmd_robot_status_msg[m[K
+[2.825s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:40:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_[m[K’ is not a member of ‘[01m[Kmd::msg[m[K’
+[2.825s]    40 |  md_robot_status_msg_pub_ = this->create_publisher<md::msg::[01;31m[Kmd_robot_status_msg_[m[K>("robot_status", 10);
+[2.825s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.825s] 
+[2.825s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:40:85:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMDRobotNode::create_publisher<<expression error> >(const char [13], int)[m[K’
+[2.825s]    40 | pub_ = [01;31m[Kthis->create_publisher<md::msg::md_robot_status_msg_>("robot_status", 10)[m[K;
+[2.825s]       |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[2.825s] 
+[2.825s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[2.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.826s]                  from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:1[m[K:
+[2.826s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.826s]    73 | [01;36m[KNode[m[K::create_publisher(
+[2.826s]       | [01;36m[K^~~~[m[K
+[2.826s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.826s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:40:85:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.826s]    40 | pub_ = [01;31m[Kthis->create_publisher<md::msg::md_robot_status_msg_>("robot_status", 10)[m[K;
+[2.826s]       |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[2.826s] 
+[2.851s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:[m[K In function ‘[01m[Kint MdReceiveProc(MDRobotNode&)[m[K’:
+[2.851s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:114:49:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KPID_PNT_MAIN_DATA_t*[m[K’ to ‘[01m[KPID_IO_MONITOR_t*[m[K’
+[2.851s]   114 |                 MakeMDRobot_Status_Message(node,[01;31m[K&node.getCurrPidMainData()[m[K);
+[2.851s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.851s]       |                                                 [01;31m[K|[m[K
+[2.851s]       |                                                 [01;31m[KPID_PNT_MAIN_DATA_t*[m[K
+[2.851s] In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:4[m[K:
+[2.851s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/robot.hpp:22:69:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_IO_MONITOR_t*)[m[K’
+[2.851s]    22 | void MakeMDRobot_Status_Message(MDRobotNode &node,[01;36m[KPID_IO_MONITOR_t *pData[m[K);  // 로봇 상태 메시지 생성
+[2.851s]       |                                                   [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.859s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In member function ‘[01m[Kvoid MDRobotNode::PubRobotRPMMessage()[m[K’:
+[2.859s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:537:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_msg_pid_pnt_main_data_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmd_robot_msg_pid_pnt_main_data[m[K’?
+[2.859s]   537 |     md_robot_message1_pub_->publish([01;31m[Kmd_robot_msg_pid_pnt_main_data_[m[K);
+[2.859s]       |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.859s]       |                                     [32m[Kmd_robot_msg_pid_pnt_main_data[m[K
+[2.861s] In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:2[m[K:
+[2.861s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:32:[m[K [01;31m[Kerror: [m[K‘[01m[KMdRobot_Status_msg[m[K’ is not a member of ‘[01m[Kmd::msg[m[K’
+[2.861s]    84 |     rclcpp::Publisher<md::msg::[01;31m[KMdRobot_Status_msg[m[K>::SharedPtr md_robot_status_msg_pub_;
+[2.861s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.861s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.861s]    84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg[01;31m[K>[m[K::SharedPtr md_robot_status_msg_pub_;
+[2.861s]       |                                                  [01;31m[K^[m[K
+[2.861s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.861s]    84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::[01;31m[KSharedPtr[m[K md_robot_status_msg_pub_;
+[2.861s]       |                                                     [01;31m[K^~~~~~~~~[m[K
+[2.862s]       |                                                              [32m[K;[m[K
+[2.864s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ does not name a type
+[2.864s]    84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::SharedPtr [01;31m[Kmd_robot_status_msg_pub_[m[K;
+[2.864s]       |                                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.864s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In member function ‘[01m[Kvoid MDRobotNode::PubRobotOdomMessage()[m[K’:
+[2.865s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:541:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_msg_pid_robot_monitor_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmd_robot_msg_pid_robot_monitor[m[K’?
+[2.865s]   541 |     md_robot_message2_pub_->publish([01;31m[Kmd_robot_msg_pid_robot_monitor_[m[K);
+[2.865s]       |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.865s]       |                                     [32m[Kmd_robot_msg_pid_robot_monitor[m[K
+[2.871s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In member function ‘[01m[Kvoid MDRobotNode::PubRobotStatusMessage()[m[K’:
+[2.871s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:545:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmd_robot_status_msg[m[K’?
+[2.871s]   545 |     [01;31m[Kmd_robot_status_msg_pub_[m[K->publish(md_robot_status_msg);
+[2.871s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.871s]       |     [32m[Kmd_robot_status_msg[m[K
+[2.931s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:[m[K In function ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_PNT_MAIN_DATA_t*)[m[K’:
+[2.931s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+[2.931s]   105 |         [01;31m[Kold_mtr_pos_id1[m[K = pData->mtr_pos_id1;
+[2.931s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.935s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:106:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+[2.935s]   106 |         [01;31m[Kold_mtr_pos_id2[m[K = pData->mtr_pos_id2;
+[2.935s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.939s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:120:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+[2.939s]   120 |     v_left = (double)(pos_left - [01;31m[Kold_mtr_pos_id1[m[K);  // 왼쪽 엔코더 카운트 값
+[2.940s]       |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.943s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:121:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+[2.944s]   121 |     v_right = (double)(pos_right - [01;31m[Kold_mtr_pos_id2[m[K); // 오른쪽 엔코더 카운트 값
+[2.944s]       |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.944s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:123:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+[2.944s]   123 |     v_left*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+[2.944s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.944s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:124:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+[2.944s]   124 |     v_right*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+[2.944s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.154s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:90: CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o] 오류 1
+[3.154s] gmake[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+[3.263s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:104: CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o] 오류 1
+[4.985s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:76: CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o] 오류 1
+[4.985s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+[4.985s] gmake: *** [Makefile:146: all] 오류 2
+[4.987s] Invoked command in '/home/hyoin/service/build/md' returned '2': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8

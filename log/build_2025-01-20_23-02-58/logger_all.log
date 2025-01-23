@@ -1,0 +1,986 @@
+[0.072s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.072s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7cf58d70fe20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cf58d70f760>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cf58d70f760>>)
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.174s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hyoin/service'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk' with type 'ros.ament_cmake' and name 'dynamixel_sdk'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk_custom_interfaces' with type 'ros.ament_cmake' and name 'dynamixel_sdk_custom_interfaces'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk_examples' with type 'ros.ament_cmake' and name 'dynamixel_sdk_examples'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/md) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/md' with type 'ros.ament_cmake' and name 'md'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ros'
+[0.188s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3' with type 'ros.ament_cmake' and name 'turtlebot3'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ros'
+[0.189s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_bringup' with type 'ros.ament_cmake' and name 'turtlebot3_bringup'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_cartographer' with type 'ros.ament_cmake' and name 'turtlebot3_cartographer'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_description' with type 'ros.ament_cmake' and name 'turtlebot3_description'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ros'
+[0.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_example' with type 'ros.ament_python' and name 'turtlebot3_example'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ros'
+[0.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_navigation2' with type 'ros.ament_cmake' and name 'turtlebot3_navigation2'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_node' with type 'ros.ament_cmake' and name 'turtlebot3_node'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_teleop' with type 'ros.ament_python' and name 'turtlebot3_teleop'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ros'
+[0.194s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_msgs' with type 'ros.ament_cmake' and name 'turtlebot3_msgs'
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.217s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 319 installed packages in /opt/ros/humble
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/dynamixel_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/dynamixel_sdk', 'merge_install': False, 'path': '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/dynamixel_sdk_custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces', 'merge_install': False, 'path': '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk_custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/serial', 'merge_install': False, 'path': '/home/hyoin/service/src/serial', 'symlink_install': False, 'test_result_base': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3_cartographer', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3/turtlebot3_cartographer', 'symlink_install': False, 'test_result_base': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3_description', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3/turtlebot3_description', 'symlink_install': False, 'test_result_base': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3_msgs', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3_navigation2', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3/turtlebot3_navigation2', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3_teleop', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3/turtlebot3_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/dynamixel_sdk_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/dynamixel_sdk_examples', 'merge_install': False, 'path': '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk_examples', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'md' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'md' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/md', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/md', 'merge_install': False, 'path': '/home/hyoin/service/src/md', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3_example', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3/turtlebot3_example', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3_node', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3/turtlebot3_node', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3_bringup', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3/turtlebot3_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyoin/service/build/turtlebot3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyoin/service/install/turtlebot3', 'merge_install': False, 'path': '/home/hyoin/service/src/turtlebot3/turtlebot3', 'symlink_install': False, 'test_result_base': None}
+[0.247s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.248s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.248s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk' with build type 'ament_cmake'
+[0.248s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk'
+[0.249s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.251s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/turtlebot3_msgs' with build type 'ament_cmake'
+[0.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/turtlebot3_msgs'
+[0.252s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.252s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.253s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/turtlebot3/turtlebot3_description' with build type 'ament_cmake'
+[0.253s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/turtlebot3/turtlebot3_description'
+[0.253s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.253s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk_custom_interfaces' with build type 'ament_cmake'
+[0.255s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk_custom_interfaces'
+[0.255s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.255s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.257s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/serial' with build type 'ament_cmake'
+[0.257s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/serial'
+[0.257s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.257s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/turtlebot3/turtlebot3_cartographer' with build type 'ament_cmake'
+[0.259s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/turtlebot3/turtlebot3_cartographer'
+[0.259s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.260s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/turtlebot3/turtlebot3_navigation2' with build type 'ament_cmake'
+[0.261s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/turtlebot3/turtlebot3_navigation2'
+[0.261s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.261s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hyoin/service/src/turtlebot3/turtlebot3_teleop' with build type 'ament_python'
+[0.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_teleop', 'ament_prefix_path')
+[0.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.ps1'
+[0.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.dsv'
+[0.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.sh'
+[0.264s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.264s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/dynamixel_sdk -- -j8 -l8
+[0.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_msgs -- -j8 -l8
+[0.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_description -- -j8 -l8
+[0.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[0.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/serial -- -j8 -l8
+[0.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_cartographer -- -j8 -l8
+[0.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_navigation2 -- -j8 -l8
+[0.503s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hyoin/service/src/turtlebot3/turtlebot3_teleop'
+[0.504s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.504s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_description -- -j8 -l8
+[0.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_description
+[0.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_cartographer -- -j8 -l8
+[0.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_cartographer
+[0.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_navigation2 -- -j8 -l8
+[0.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_navigation2
+[0.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/dynamixel_sdk -- -j8 -l8
+[0.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/dynamixel_sdk
+[0.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/serial -- -j8 -l8
+[0.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/serial
+[0.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation2)
+[0.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_navigation2
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2' for CMake module files
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2' for CMake config files
+[0.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation2', 'cmake_prefix_path')
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.ps1'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.dsv'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.sh'
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2/bin'
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2/lib/pkgconfig/turtlebot3_navigation2.pc'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2/lib/python3.10/site-packages'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2/bin'
+[0.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.ps1'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.sh'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.bash'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.zsh'
+[0.549s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_navigation2/share/colcon-core/packages/turtlebot3_navigation2)
+[0.550s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation2)
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2' for CMake module files
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2' for CMake config files
+[0.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation2', 'cmake_prefix_path')
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.ps1'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.dsv'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.sh'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2/bin'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2/lib/pkgconfig/turtlebot3_navigation2.pc'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2/lib/python3.10/site-packages'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_navigation2/bin'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.sh'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.bash'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.zsh'
+[0.553s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_navigation2/share/colcon-core/packages/turtlebot3_navigation2)
+[0.554s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk' for CMake module files
+[0.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/dynamixel_sdk
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk' for CMake config files
+[0.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[0.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[0.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[0.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/lib'
+[0.556s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[0.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[0.557s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[0.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[0.557s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/bin'
+[0.557s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[0.557s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/lib/python3.10/site-packages'
+[0.557s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/bin'
+[0.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[0.558s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[0.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[0.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[0.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[0.559s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[0.559s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[0.559s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk' for CMake module files
+[0.560s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk' for CMake config files
+[0.560s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[0.561s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/lib'
+[0.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[0.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[0.561s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[0.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[0.561s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/bin'
+[0.562s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[0.562s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/lib/python3.10/site-packages'
+[0.562s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk/bin'
+[0.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[0.562s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[0.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[0.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[0.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[0.564s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[0.564s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_description)
+[0.564s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description' for CMake module files
+[0.565s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_description
+[0.565s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description' for CMake config files
+[0.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_description', 'cmake_prefix_path')
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.ps1'
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.dsv'
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.sh'
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description/bin'
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc'
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description/lib/python3.10/site-packages'
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description/bin'
+[0.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.ps1'
+[0.566s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.dsv'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.sh'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.bash'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.zsh'
+[0.567s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_description/share/colcon-core/packages/turtlebot3_description)
+[0.568s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_description)
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description' for CMake module files
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description' for CMake config files
+[0.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_description', 'cmake_prefix_path')
+[0.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.ps1'
+[0.568s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.dsv'
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.sh'
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description/bin'
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc'
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description/lib/python3.10/site-packages'
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_description/bin'
+[0.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.ps1'
+[0.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.dsv'
+[0.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.sh'
+[0.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.bash'
+[0.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_description/share/turtlebot3_description/package.zsh'
+[0.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_description/share/colcon-core/packages/turtlebot3_description)
+[0.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_cartographer)
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer' for CMake module files
+[0.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_cartographer
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer' for CMake config files
+[0.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_cartographer', 'cmake_prefix_path')
+[0.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.ps1'
+[0.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.dsv'
+[0.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.sh'
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer/bin'
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer/lib/pkgconfig/turtlebot3_cartographer.pc'
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer/lib/python3.10/site-packages'
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer/bin'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.ps1'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.sh'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.bash'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.zsh'
+[0.575s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_cartographer/share/colcon-core/packages/turtlebot3_cartographer)
+[0.575s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_cartographer)
+[0.576s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer' for CMake module files
+[0.576s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer' for CMake config files
+[0.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_cartographer', 'cmake_prefix_path')
+[0.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.ps1'
+[0.576s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.dsv'
+[0.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.sh'
+[0.577s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer/bin'
+[0.577s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer/lib/pkgconfig/turtlebot3_cartographer.pc'
+[0.577s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer/lib/python3.10/site-packages'
+[0.577s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_cartographer/bin'
+[0.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.ps1'
+[0.578s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv'
+[0.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.sh'
+[0.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.bash'
+[0.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.zsh'
+[0.579s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_cartographer/share/colcon-core/packages/turtlebot3_cartographer)
+[0.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.579s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial' for CMake module files
+[0.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/serial
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial' for CMake config files
+[0.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.581s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/lib'
+[0.581s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/bin'
+[0.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'path')
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/path.ps1'
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/serial/share/serial/hook/path.dsv'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/path.sh'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/lib/pkgconfig/serial.pc'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/lib/python3.10/site-packages'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/bin'
+[0.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'pythonscriptspath')
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/pythonscriptspath.ps1'
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/serial/share/serial/hook/pythonscriptspath.dsv'
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/pythonscriptspath.sh'
+[0.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/serial/share/serial/package.ps1'
+[0.584s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/serial/share/serial/package.dsv'
+[0.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/serial/share/serial/package.sh'
+[0.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/serial/share/serial/package.bash'
+[0.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/serial/share/serial/package.zsh'
+[0.585s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/serial/share/colcon-core/packages/serial)
+[0.585s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial' for CMake module files
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial' for CMake config files
+[0.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.586s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/lib'
+[0.586s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/bin'
+[0.586s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'path')
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/path.ps1'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/serial/share/serial/hook/path.dsv'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/path.sh'
+[0.587s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/lib/pkgconfig/serial.pc'
+[0.587s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/lib/python3.10/site-packages'
+[0.587s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/serial/bin'
+[0.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'pythonscriptspath')
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/pythonscriptspath.ps1'
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/serial/share/serial/hook/pythonscriptspath.dsv'
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/serial/share/serial/hook/pythonscriptspath.sh'
+[0.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/serial/share/serial/package.ps1'
+[0.589s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/serial/share/serial/package.dsv'
+[0.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/serial/share/serial/package.sh'
+[0.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/serial/share/serial/package.bash'
+[0.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/serial/share/serial/package.zsh'
+[0.590s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/serial/share/colcon-core/packages/serial)
+[0.590s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/md' with build type 'ament_cmake'
+[0.590s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/md'
+[0.590s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.590s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/md': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8
+[0.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_msgs -- -j8 -l8
+[0.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_msgs
+[0.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[0.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/dynamixel_sdk_custom_interfaces
+[0.721s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[0.722s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/dynamixel_sdk_custom_interfaces
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[0.723s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib'
+[0.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[0.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[0.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/bin'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib/python3.10/site-packages'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/bin'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[0.729s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[0.729s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[0.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[0.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[0.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[0.731s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib'
+[0.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/bin'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib/python3.10/site-packages'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/bin'
+[0.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[0.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[0.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[0.734s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[0.735s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk_examples' with build type 'ament_cmake'
+[0.735s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/DynamixelSDK/dynamixel_sdk_examples'
+[0.735s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.735s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.737s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_msgs)
+[0.737s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs' for CMake module files
+[0.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_msgs
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs' for CMake config files
+[0.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'cmake_prefix_path')
+[0.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.ps1'
+[0.739s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.dsv'
+[0.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.sh'
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/lib'
+[0.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'ld_library_path_lib')
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.ps1'
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.dsv'
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.sh'
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/bin'
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/lib/pkgconfig/turtlebot3_msgs.pc'
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/lib/python3.10/site-packages'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/bin'
+[0.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.ps1'
+[0.743s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.dsv'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.sh'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.bash'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.zsh'
+[0.745s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_msgs/share/colcon-core/packages/turtlebot3_msgs)
+[0.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_msgs)
+[0.746s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs' for CMake module files
+[0.746s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs' for CMake config files
+[0.747s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'cmake_prefix_path')
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.ps1'
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.dsv'
+[0.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.sh'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/lib'
+[0.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'ld_library_path_lib')
+[0.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.ps1'
+[0.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.dsv'
+[0.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.sh'
+[0.749s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/bin'
+[0.749s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/lib/pkgconfig/turtlebot3_msgs.pc'
+[0.750s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/lib/python3.10/site-packages'
+[0.750s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_msgs/bin'
+[0.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.ps1'
+[0.750s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.dsv'
+[0.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.sh'
+[0.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.bash'
+[0.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/package.zsh'
+[0.752s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_msgs/share/colcon-core/packages/turtlebot3_msgs)
+[0.752s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/turtlebot3/turtlebot3_node' with build type 'ament_cmake'
+[0.752s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/turtlebot3/turtlebot3_node'
+[0.752s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.752s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.754s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hyoin/service/src/turtlebot3/turtlebot3_example' with build type 'ament_python'
+[0.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_example', 'ament_prefix_path')
+[0.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.ps1'
+[0.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.dsv'
+[0.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.sh'
+[0.755s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.755s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/src/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/hyoin/service/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hyoin/service/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/hyoin/service/build/turtlebot3_teleop/build install --record /home/hyoin/service/build/turtlebot3_teleop/install.log --single-version-externally-managed install_data
+[0.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/dynamixel_sdk_examples -- -j8 -l8
+[0.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_node -- -j8 -l8
+[0.929s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hyoin/service/src/turtlebot3/turtlebot3_example'
+[0.929s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.929s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.935s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/dynamixel_sdk_examples -- -j8 -l8
+[0.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/dynamixel_sdk_examples
+[0.937s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_node -- -j8 -l8
+[0.937s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_node
+[0.950s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_examples)
+[0.950s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples' for CMake module files
+[0.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/dynamixel_sdk_examples
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples' for CMake config files
+[0.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_examples', 'cmake_prefix_path')
+[0.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.ps1'
+[0.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.dsv'
+[0.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.sh'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/lib'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/bin'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/lib/pkgconfig/dynamixel_sdk_examples.pc'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/lib/python3.10/site-packages'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/bin'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.ps1'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.sh'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.bash'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.zsh'
+[0.955s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/dynamixel_sdk_examples/share/colcon-core/packages/dynamixel_sdk_examples)
+[0.955s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_examples)
+[0.955s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples' for CMake module files
+[0.955s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples' for CMake config files
+[0.955s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_examples', 'cmake_prefix_path')
+[0.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.ps1'
+[0.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.dsv'
+[0.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.sh'
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/lib'
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/bin'
+[0.958s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/lib/pkgconfig/dynamixel_sdk_examples.pc'
+[0.958s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/lib/python3.10/site-packages'
+[0.958s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/dynamixel_sdk_examples/bin'
+[0.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.ps1'
+[0.959s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv'
+[0.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.sh'
+[0.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.bash'
+[0.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.zsh'
+[0.961s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/dynamixel_sdk_examples/share/colcon-core/packages/dynamixel_sdk_examples)
+[0.962s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_node)
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node' for CMake module files
+[0.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_node
+[0.963s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node' for CMake config files
+[0.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_node', 'cmake_prefix_path')
+[0.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.ps1'
+[0.964s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.dsv'
+[0.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.sh'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/lib'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/bin'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/lib/pkgconfig/turtlebot3_node.pc'
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/lib/python3.10/site-packages'
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/bin'
+[0.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.ps1'
+[0.967s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.dsv'
+[0.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.sh'
+[0.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.bash'
+[0.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.zsh'
+[0.968s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_node/share/colcon-core/packages/turtlebot3_node)
+[0.968s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_node)
+[0.968s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node' for CMake module files
+[0.968s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node' for CMake config files
+[0.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_node', 'cmake_prefix_path')
+[0.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.ps1'
+[0.969s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.dsv'
+[0.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.sh'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/lib'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/bin'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/lib/pkgconfig/turtlebot3_node.pc'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/lib/python3.10/site-packages'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_node/bin'
+[0.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.ps1'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.dsv'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.sh'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.bash'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.zsh'
+[0.972s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_node/share/colcon-core/packages/turtlebot3_node)
+[0.972s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/turtlebot3/turtlebot3_bringup' with build type 'ament_cmake'
+[0.972s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/turtlebot3/turtlebot3_bringup'
+[0.972s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.972s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.975s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_teleop' for CMake module files
+[0.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/src/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/hyoin/service/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hyoin/service/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/hyoin/service/build/turtlebot3_teleop/build install --record /home/hyoin/service/build/turtlebot3_teleop/install.log --single-version-externally-managed install_data
+[0.975s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_teleop' for CMake config files
+[0.976s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_teleop/lib'
+[0.976s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_teleop/bin'
+[0.976s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_teleop/lib/pkgconfig/turtlebot3_teleop.pc'
+[0.976s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_teleop/lib/python3.10/site-packages'
+[0.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_teleop', 'pythonpath')
+[0.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.ps1'
+[0.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.dsv'
+[0.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.sh'
+[0.977s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_teleop/bin'
+[0.977s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_teleop)
+[0.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/package.ps1'
+[0.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/package.dsv'
+[0.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/package.sh'
+[0.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/package.bash'
+[0.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_teleop/share/turtlebot3_teleop/package.zsh'
+[0.978s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_teleop/share/colcon-core/packages/turtlebot3_teleop)
+[0.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_bringup': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_bringup -- -j8 -l8
+[1.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_bringup' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_bringup -- -j8 -l8
+[1.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3_bringup': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_bringup
+[1.023s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_bringup)
+[1.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3_bringup' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_bringup
+[1.023s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup' for CMake module files
+[1.024s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup' for CMake config files
+[1.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_bringup', 'cmake_prefix_path')
+[1.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.ps1'
+[1.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.dsv'
+[1.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.sh'
+[1.026s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup/bin'
+[1.026s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup/lib/pkgconfig/turtlebot3_bringup.pc'
+[1.026s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup/lib/python3.10/site-packages'
+[1.026s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup/bin'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.ps1'
+[1.027s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.dsv'
+[1.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.sh'
+[1.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.bash'
+[1.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.zsh'
+[1.028s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_bringup/share/colcon-core/packages/turtlebot3_bringup)
+[1.029s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_bringup)
+[1.029s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup' for CMake module files
+[1.029s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup' for CMake config files
+[1.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_bringup', 'cmake_prefix_path')
+[1.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.ps1'
+[1.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.dsv'
+[1.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.sh'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup/bin'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup/lib/pkgconfig/turtlebot3_bringup.pc'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup/lib/python3.10/site-packages'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_bringup/bin'
+[1.032s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.ps1'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.dsv'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.sh'
+[1.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.bash'
+[1.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_bringup/share/turtlebot3_bringup/package.zsh'
+[1.034s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_bringup/share/colcon-core/packages/turtlebot3_bringup)
+[1.157s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/src/turtlebot3/turtlebot3_example': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hyoin/service/install/turtlebot3_example/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/hyoin/service/build/turtlebot3_example/build install --record /home/hyoin/service/build/turtlebot3_example/install.log --single-version-externally-managed install_data
+[1.346s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_example' for CMake module files
+[1.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/src/turtlebot3/turtlebot3_example' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hyoin/service/install/turtlebot3_example/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/hyoin/service/build/turtlebot3_example/build install --record /home/hyoin/service/build/turtlebot3_example/install.log --single-version-externally-managed install_data
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_example' for CMake config files
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_example/lib'
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_example/bin'
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_example/lib/pkgconfig/turtlebot3_example.pc'
+[1.348s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_example/lib/python3.10/site-packages'
+[1.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_example', 'pythonpath')
+[1.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.ps1'
+[1.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.dsv'
+[1.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.sh'
+[1.349s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3_example/bin'
+[1.349s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_example)
+[1.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/package.ps1'
+[1.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/package.dsv'
+[1.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/package.sh'
+[1.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/package.bash'
+[1.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3_example/share/turtlebot3_example/package.zsh'
+[1.351s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3_example/share/colcon-core/packages/turtlebot3_example)
+[1.351s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyoin/service/src/turtlebot3/turtlebot3' with build type 'ament_cmake'
+[1.351s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyoin/service/src/turtlebot3/turtlebot3'
+[1.351s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.351s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_bringup:/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_example:/home/hyoin/service/install/turtlebot3_teleop:/home/hyoin/service/install/turtlebot3_navigation2:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/turtlebot3_cartographer:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_bringup:/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_navigation2:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/turtlebot3_cartographer:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_example/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3 -- -j8 -l8
+[1.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_bringup:/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_example:/home/hyoin/service/install/turtlebot3_teleop:/home/hyoin/service/install/turtlebot3_navigation2:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/turtlebot3_cartographer:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_bringup:/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_navigation2:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/turtlebot3_cartographer:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_example/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3 -- -j8 -l8
+[1.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyoin/service/build/turtlebot3': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_bringup:/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_example:/home/hyoin/service/install/turtlebot3_teleop:/home/hyoin/service/install/turtlebot3_navigation2:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/turtlebot3_cartographer:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_bringup:/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_navigation2:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/turtlebot3_cartographer:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_example/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3
+[1.402s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3)
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3' for CMake module files
+[1.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_bringup:/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_example:/home/hyoin/service/install/turtlebot3_teleop:/home/hyoin/service/install/turtlebot3_navigation2:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/turtlebot3_cartographer:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_bringup:/home/hyoin/service/install/turtlebot3_node:/home/hyoin/service/install/turtlebot3_navigation2:/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/turtlebot3_description:/home/hyoin/service/install/turtlebot3_cartographer:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_example/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3' for CMake config files
+[1.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'cmake_prefix_path')
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.ps1'
+[1.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.dsv'
+[1.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.sh'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3/bin'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3/lib/pkgconfig/turtlebot3.pc'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3/lib/python3.10/site-packages'
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3/bin'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.ps1'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.dsv'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.sh'
+[1.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.bash'
+[1.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.zsh'
+[1.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3/share/colcon-core/packages/turtlebot3)
+[1.406s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3)
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3' for CMake module files
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3' for CMake config files
+[1.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'cmake_prefix_path')
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.ps1'
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.dsv'
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.sh'
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3/bin'
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3/lib/pkgconfig/turtlebot3.pc'
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3/lib/python3.10/site-packages'
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/turtlebot3/bin'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.ps1'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.dsv'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.sh'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.bash'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/turtlebot3/share/turtlebot3/package.zsh'
+[1.409s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/turtlebot3/share/colcon-core/packages/turtlebot3)
+[7.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyoin/service/build/md' returned '2': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8
+[7.029s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(md)
+[7.029s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/md' for CMake module files
+[7.030s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/md' for CMake config files
+[7.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('md', 'cmake_prefix_path')
+[7.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/md/share/md/hook/cmake_prefix_path.ps1'
+[7.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/md/share/md/hook/cmake_prefix_path.dsv'
+[7.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/md/share/md/hook/cmake_prefix_path.sh'
+[7.031s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/md/lib'
+[7.031s] Level 1:colcon.colcon_core.shell:create_environment_hook('md', 'ld_library_path_lib')
+[7.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/md/share/md/hook/ld_library_path_lib.ps1'
+[7.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyoin/service/install/md/share/md/hook/ld_library_path_lib.dsv'
+[7.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyoin/service/install/md/share/md/hook/ld_library_path_lib.sh'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/md/bin'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/md/lib/pkgconfig/md.pc'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/md/lib/python3.10/site-packages'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/hyoin/service/install/md/bin'
+[7.032s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/md/share/md/package.ps1'
+[7.033s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyoin/service/install/md/share/md/package.dsv'
+[7.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/md/share/md/package.sh'
+[7.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/md/share/md/package.bash'
+[7.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyoin/service/install/md/share/md/package.zsh'
+[7.034s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyoin/service/install/md/share/colcon-core/packages/md)
+[7.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.044s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.048s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.048s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.048s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.055s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.055s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hyoin/service/install/local_setup.ps1'
+[7.056s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hyoin/service/install/_local_setup_util_ps1.py'
+[7.057s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hyoin/service/install/setup.ps1'
+[7.057s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hyoin/service/install/local_setup.sh'
+[7.058s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hyoin/service/install/_local_setup_util_sh.py'
+[7.058s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hyoin/service/install/setup.sh'
+[7.059s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hyoin/service/install/local_setup.bash'
+[7.059s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hyoin/service/install/setup.bash'
+[7.060s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hyoin/service/install/local_setup.zsh'
+[7.060s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hyoin/service/install/setup.zsh'

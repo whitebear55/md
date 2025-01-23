@@ -1,0 +1,152 @@
+[0.020s] Invoking command in '/home/hyoin/service/build/md': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8
+[0.051s] [  1%] Built target md__cpp
+[0.054s] [ 11%] Built target md__rosidl_generator_c
+[0.069s] [ 11%] Built target ament_cmake_python_symlink_md
+[0.076s] [ 41%] Built target md__rosidl_typesupport_fastrtps_c
+[0.077s] [ 41%] Built target md__rosidl_typesupport_cpp
+[0.077s] [ 41%] Built target md__rosidl_typesupport_fastrtps_cpp
+[0.077s] [ 52%] Built target md__rosidl_typesupport_introspection_cpp
+[0.077s] [ 60%] Built target md__rosidl_typesupport_introspection_c
+[0.082s] [ 70%] Built target md__rosidl_typesupport_c
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target md_robot_node[0m
+[0.100s] [ 70%] Built target md
+[0.108s] [ 72%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o[0m
+[0.109s] [ 74%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o[0m
+[0.109s] [ 76%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o[0m
+[0.118s] [ 78%] Built target md__py
+[0.147s] [ 86%] Built target md__rosidl_generator_py
+[0.201s] [ 94%] Built target md__rosidl_typesupport_introspection_c__pyext
+[0.201s] [ 94%] Built target md__rosidl_typesupport_fastrtps_c__pyext
+[0.204s] [ 98%] Built target md__rosidl_typesupport_c__pyext
+[0.341s] running egg_info
+[0.341s] writing md.egg-info/PKG-INFO
+[0.342s] writing dependency_links to md.egg-info/dependency_links.txt
+[0.342s] writing top-level names to md.egg-info/top_level.txt
+[0.344s] reading manifest file 'md.egg-info/SOURCES.txt'
+[0.345s] writing manifest file 'md.egg-info/SOURCES.txt'
+[0.369s] [ 98%] Built target ament_cmake_python_build_md_egg
+[1.937s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In member function ‘[01m[Kvoid MDRobotNode::PubRobotStatusMessage()[m[K’:
+[1.937s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:545:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<md::msg::Pose_<std::allocator<void> > >::publish(RobotStatus_msg&)[m[K’
+[1.937s]   545 |     [01;31m[Kmd_robot_status_msg_pub_->publish(md_robot_status_msg)[m[K;
+[1.937s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.937s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[1.937s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[1.937s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.937s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.937s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.937s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.937s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.937s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.937s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.938s]                  from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:1[m[K:
+[1.938s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:251:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [with T = T; MessageT = md::msg::Pose_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[1.938s]   251 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+[1.938s]       |   [01;36m[K^~~~~~~[m[K
+[1.938s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:251:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.938s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:545:38:[m[K [01;36m[Knote: [m[K  ‘[01m[KRobotStatus_msg[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<md::msg::Pose_<std::allocator<void> > > >[m[K’
+[1.938s]   545 |     [01;36m[Kmd_robot_status_msg_pub_->publish(md_robot_status_msg)[m[K;
+[1.938s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.938s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[1.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[1.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.939s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.939s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.939s]                  from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:1[m[K:
+[1.939s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = md::msg::Pose_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[1.939s]   292 |   [01;36m[Kpublish[m[K(const T & msg)
+[1.939s]       |   [01;36m[K^~~~~~~[m[K
+[1.939s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.939s] In file included from [01m[K/usr/include/c++/11/bits/move.h:57[m[K,
+[1.939s]                  from [01m[K/usr/include/c++/11/bits/stl_pair.h:59[m[K,
+[1.939s]                  from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[1.939s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[1.939s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[1.939s]                  from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:1[m[K:
+[1.939s] /usr/include/c++/11/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void][m[K’:
+[1.939s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K   required by substitution of ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, md::msg::Pose_<std::allocator<void> > >::value), void> rclcpp::Publisher<md::msg::Pose_<std::allocator<void> > >::publish<T>(const T&) [with T = RobotStatus_msg][m[K’
+[1.939s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:545:38:[m[K   required from here
+[1.940s] [01m[K/usr/include/c++/11/type_traits:2579:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[1.940s]  2579 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+[1.940s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[1.940s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.940s]                  from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:1[m[K:
+[1.940s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:322:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [with T = T; MessageT = md::msg::Pose_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[1.941s]   322 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+[1.941s]       |   [01;36m[K^~~~~~~[m[K
+[1.941s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:322:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.941s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:545:38:[m[K [01;36m[Knote: [m[K  ‘[01m[KRobotStatus_msg[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<md::msg::Pose_<std::allocator<void> > > >[m[K’
+[1.941s]   545 |     [01;36m[Kmd_robot_status_msg_pub_->publish(md_robot_status_msg)[m[K;
+[1.941s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.941s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.941s]                  from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:1[m[K:
+[1.942s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:364:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = md::msg::Pose_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[1.942s]   364 |   [01;36m[Kpublish[m[K(const T & msg)
+[1.942s]       |   [01;36m[K^~~~~~~[m[K
+[1.942s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:364:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.942s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:383:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = md::msg::Pose_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K’
+[1.942s]   383 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[1.942s]       |   [01;36m[K^~~~~~~[m[K
+[1.942s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:383:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KRobotStatus_msg[m[K’ to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+[1.942s]   383 |   publish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+[1.942s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.942s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:389:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = md::msg::Pose_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[1.942s]   389 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+[1.942s]       |   [01;36m[K^~~~~~~[m[K
+[1.942s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:389:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KRobotStatus_msg[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+[1.943s]   389 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+[1.943s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.943s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:403:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [with MessageT = md::msg::Pose_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = md::msg::Pose_<std::allocator<void> >][m[K’
+[1.943s]   403 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+[1.943s]       |   [01;36m[K^~~~~~~[m[K
+[1.943s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:403:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KRobotStatus_msg[m[K’ to ‘[01m[Krclcpp::LoanedMessage<md::msg::Pose_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[1.943s]   403 |   publish([01;36m[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+[1.943s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[2.068s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:[m[K In function ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_PNT_MAIN_DATA_t*)[m[K’:
+[2.068s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+[2.068s]   105 |         [01;31m[Kold_mtr_pos_id1[m[K = pData->mtr_pos_id1;
+[2.069s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.073s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:106:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+[2.073s]   106 |         [01;31m[Kold_mtr_pos_id2[m[K = pData->mtr_pos_id2;
+[2.073s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.077s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:120:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+[2.077s]   120 |     v_left = (double)(pos_left - [01;31m[Kold_mtr_pos_id1[m[K);  // 왼쪽 엔코더 카운트 값
+[2.077s]       |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.081s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:121:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+[2.081s]   121 |     v_right = (double)(pos_right - [01;31m[Kold_mtr_pos_id2[m[K); // 오른쪽 엔코더 카운트 값
+[2.081s]       |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.081s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:123:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+[2.081s]   123 |     v_left*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+[2.082s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.082s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:124:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+[2.082s]   124 |     v_right*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+[2.082s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.394s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:104: CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o] 오류 1
+[2.394s] gmake[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+[4.181s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:76: CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o] 오류 1
+[4.181s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+[4.181s] gmake: *** [Makefile:146: all] 오류 2
+[4.183s] Invoked command in '/home/hyoin/service/build/md' returned '2': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8

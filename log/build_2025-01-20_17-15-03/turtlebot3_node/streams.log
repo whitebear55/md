@@ -1,0 +1,86 @@
+[0.011s] Invoking command in '/home/hyoin/service/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hyoin/service/src/turtlebot3/turtlebot3_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyoin/service/install/turtlebot3_node
+[0.077s] -- The C compiler identification is GNU 11.4.0
+[0.143s] -- The CXX compiler identification is GNU 11.4.0
+[0.156s] -- Detecting C compiler ABI info
+[0.231s] -- Detecting C compiler ABI info - done
+[0.240s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.241s] -- Detecting C compile features
+[0.241s] -- Detecting C compile features - done
+[0.245s] -- Detecting CXX compiler ABI info
+[0.338s] -- Detecting CXX compiler ABI info - done
+[0.349s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.349s] -- Detecting CXX compile features
+[0.350s] -- Detecting CXX compile features - done
+[0.353s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.538s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.611s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.639s] -- Found dynamixel_sdk: 3.7.60 (/home/hyoin/service/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.642s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.697s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.703s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.710s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.725s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.747s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.804s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[0.858s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.861s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.938s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.960s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.993s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.999s] -- Looking for pthread.h
+[1.049s] -- Looking for pthread.h - found
+[1.049s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.100s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.101s] -- Found Threads: TRUE  
+[1.131s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.144s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.158s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[1.169s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[1.177s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.245s] -- Found turtlebot3_msgs: 2.2.3 (/home/hyoin/service/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[1.314s] -- Configuring done
+[1.328s] -- Generating done
+[1.332s] -- Build files have been written to: /home/hyoin/service/build/turtlebot3_node
+[1.340s] Invoked command in '/home/hyoin/service/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hyoin/service/src/turtlebot3/turtlebot3_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyoin/service/install/turtlebot3_node
+[1.341s] Invoking command in '/home/hyoin/service/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_node -- -j8 -l8
+[1.379s] [  7%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/motor_power.cpp.o[0m
+[1.380s] [ 14%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/dynamixel_sdk_wrapper.cpp.o[0m
+[1.380s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/odometry.cpp.o[0m
+[1.387s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/turtlebot3.cpp.o[0m
+[1.389s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/battery_state.cpp.o[0m
+[1.393s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/reset.cpp.o[0m
+[1.396s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o[0m
+[1.396s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/diff_drive_controller.cpp.o[0m
+[2.171s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/imu.cpp.o[0m
+[5.913s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/joint_state.cpp.o[0m
+[6.636s] [ 78%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/sensor_state.cpp.o[0m
+[16.301s] [ 85%] [32m[1mLinking CXX static library libturtlebot3_node_lib.a[0m
+[16.596s] [ 85%] Built target turtlebot3_node_lib
+[16.609s] [ 92%] [32mBuilding CXX object CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o[0m
+[18.762s] [100%] [32m[1mLinking CXX executable turtlebot3_ros[0m
+[20.086s] [100%] Built target turtlebot3_ros
+[20.096s] Invoked command in '/home/hyoin/service/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyoin/service/build/turtlebot3_node -- -j8 -l8
+[20.097s] Invoking command in '/home/hyoin/service/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_node
+[20.102s] -- Install configuration: ""
+[20.102s] -- Execute custom install script
+[20.103s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/param/burger.yaml
+[20.110s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/param/waffle.yaml
+[20.118s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/param/waffle_pi.yaml
+[20.123s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros
+[20.129s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_node
+[20.134s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_node
+[20.139s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.sh
+[20.144s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.dsv
+[20.149s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/environment/path.sh
+[20.154s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/environment/path.dsv
+[20.160s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/local_setup.bash
+[20.165s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/local_setup.sh
+[20.170s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/local_setup.zsh
+[20.175s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/local_setup.dsv
+[20.180s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.dsv
+[20.185s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/ament_index/resource_index/packages/turtlebot3_node
+[20.190s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[20.195s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig.cmake
+[20.200s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig-version.cmake
+[20.205s] -- Symlinking: /home/hyoin/service/install/turtlebot3_node/share/turtlebot3_node/package.xml
+[20.212s] Invoked command in '/home/hyoin/service/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/turtlebot3_msgs:/home/hyoin/service/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/turtlebot3_msgs/lib:/home/hyoin/service/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyoin/service/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyoin/service/build/turtlebot3_node

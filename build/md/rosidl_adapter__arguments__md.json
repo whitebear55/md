@@ -1,0 +1,8 @@
+{
+  "package_name": "md",
+  "non_idl_tuples": [
+    "/home/hyoin/service/src/md:msg/MdRobotMsg1.msg",
+    "/home/hyoin/service/src/md:msg/MdRobotMsg2.msg",
+    "/home/hyoin/service/src/md:msg/Pose.msg"
+  ]
+}

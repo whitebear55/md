@@ -1,0 +1,6 @@
+Invoking command in '/home/hyoin/service/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hyoin/service/src/DynamixelSDK/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/hyoin/service/install/dynamixel_sdk
+Invoked command in '/home/hyoin/service/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hyoin/service/src/DynamixelSDK/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/hyoin/service/install/dynamixel_sdk
+Invoking command in '/home/hyoin/service/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/dynamixel_sdk -- -j8 -l8
+Invoked command in '/home/hyoin/service/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/dynamixel_sdk -- -j8 -l8
+Invoking command in '/home/hyoin/service/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/dynamixel_sdk
+Invoked command in '/home/hyoin/service/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/dynamixel_sdk

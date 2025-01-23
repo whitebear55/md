@@ -1,0 +1,119 @@
+In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:2[m[K:
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:32:[m[K [01;31m[Kerror: [m[K‘[01m[KMdRobot_Status_msg[m[K’ is not a member of ‘[01m[Kmd::msg[m[K’
+   84 |     rclcpp::Publisher<md::msg::[01;31m[KMdRobot_Status_msg[m[K>::SharedPtr md_robot_status_msg_pub_;
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg[01;31m[K>[m[K::SharedPtr md_robot_status_msg_pub_;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::[01;31m[KSharedPtr[m[K md_robot_status_msg_pub_;
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ does not name a type
+   84 |   rclcpp::Publisher<md::msg::MdRobot_Status_msg>::SharedPtr [01;31m[Kmd_robot_status_msg_pub_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:3[m[K:
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:32:[m[K [01;31m[Kerror: [m[K‘[01m[KMdRobot_Status_msg[m[K’ is not a member of ‘[01m[Kmd::msg[m[K’
+   84 |     rclcpp::Publisher<md::msg::[01;31m[KMdRobot_Status_msg[m[K>::SharedPtr md_robot_status_msg_pub_;
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg[01;31m[K>[m[K::SharedPtr md_robot_status_msg_pub_;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::[01;31m[KSharedPtr[m[K md_robot_status_msg_pub_;
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ does not name a type
+   84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::SharedPtr [01;31m[Kmd_robot_status_msg_pub_[m[K;
+      |                                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In constructor ‘[01m[KMDRobotNode::MDRobotNode()[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmd_robot_status_msg[m[K’?
+   40 |     [01;31m[Kmd_robot_status_msg_pub_[m[K = this->create_publisher<md::msg::md_robot_status_msg_>("robot_status", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kmd_robot_status_msg[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:40:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_[m[K’ is not a member of ‘[01m[Kmd::msg[m[K’
+   40 |  md_robot_status_msg_pub_ = this->create_publisher<md::msg::[01;31m[Kmd_robot_status_msg_[m[K>("robot_status", 10);
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:40:85:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMDRobotNode::create_publisher<<expression error> >(const char [13], int)[m[K’
+   40 | pub_ = [01;31m[Kthis->create_publisher<md::msg::md_robot_status_msg_>("robot_status", 10)[m[K;
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:40:85:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   40 | pub_ = [01;31m[Kthis->create_publisher<md::msg::md_robot_status_msg_>("robot_status", 10)[m[K;
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:[m[K In function ‘[01m[Kint MdReceiveProc(MDRobotNode&)[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:114:49:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KPID_PNT_MAIN_DATA_t*[m[K’ to ‘[01m[KPID_IO_MONITOR_t*[m[K’
+  114 |                 MakeMDRobot_Status_Message(node,[01;31m[K&node.getCurrPidMainData()[m[K);
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                 [01;31m[K|[m[K
+      |                                                 [01;31m[KPID_PNT_MAIN_DATA_t*[m[K
+In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:4[m[K:
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/robot.hpp:22:69:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_IO_MONITOR_t*)[m[K’
+   22 | void MakeMDRobot_Status_Message(MDRobotNode &node,[01;36m[KPID_IO_MONITOR_t *pData[m[K);  // 로봇 상태 메시지 생성
+      |                                                   [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In member function ‘[01m[Kvoid MDRobotNode::PubRobotRPMMessage()[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:537:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_msg_pid_pnt_main_data_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmd_robot_msg_pid_pnt_main_data[m[K’?
+  537 |     md_robot_message1_pub_->publish([01;31m[Kmd_robot_msg_pid_pnt_main_data_[m[K);
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[Kmd_robot_msg_pid_pnt_main_data[m[K
+In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:2[m[K:
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:32:[m[K [01;31m[Kerror: [m[K‘[01m[KMdRobot_Status_msg[m[K’ is not a member of ‘[01m[Kmd::msg[m[K’
+   84 |     rclcpp::Publisher<md::msg::[01;31m[KMdRobot_Status_msg[m[K>::SharedPtr md_robot_status_msg_pub_;
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg[01;31m[K>[m[K::SharedPtr md_robot_status_msg_pub_;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::[01;31m[KSharedPtr[m[K md_robot_status_msg_pub_;
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:84:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ does not name a type
+   84 |     rclcpp::Publisher<md::msg::MdRobot_Status_msg>::SharedPtr [01;31m[Kmd_robot_status_msg_pub_[m[K;
+      |                                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In member function ‘[01m[Kvoid MDRobotNode::PubRobotOdomMessage()[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:541:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_msg_pid_robot_monitor_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmd_robot_msg_pid_robot_monitor[m[K’?
+  541 |     md_robot_message2_pub_->publish([01;31m[Kmd_robot_msg_pid_robot_monitor_[m[K);
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[Kmd_robot_msg_pid_robot_monitor[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:[m[K In member function ‘[01m[Kvoid MDRobotNode::PubRobotStatusMessage()[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:545:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmd_robot_status_msg_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmd_robot_status_msg[m[K’?
+  545 |     [01;31m[Kmd_robot_status_msg_pub_[m[K->publish(md_robot_status_msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kmd_robot_status_msg[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:[m[K In function ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_PNT_MAIN_DATA_t*)[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+  105 |         [01;31m[Kold_mtr_pos_id1[m[K = pData->mtr_pos_id1;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:106:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+  106 |         [01;31m[Kold_mtr_pos_id2[m[K = pData->mtr_pos_id2;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:120:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+  120 |     v_left = (double)(pos_left - [01;31m[Kold_mtr_pos_id1[m[K);  // 왼쪽 엔코더 카운트 값
+      |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:121:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+  121 |     v_right = (double)(pos_right - [01;31m[Kold_mtr_pos_id2[m[K); // 오른쪽 엔코더 카운트 값
+      |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:123:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+  123 |     v_left*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:124:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+  124 |     v_right*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:90: CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o] 오류 1
+gmake[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:104: CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o] 오류 1
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:76: CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o] 오류 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+gmake: *** [Makefile:146: all] 오류 2

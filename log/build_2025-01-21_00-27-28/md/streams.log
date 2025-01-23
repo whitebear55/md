@@ -1,0 +1,215 @@
+[0.007s] Invoking command in '/home/hyoin/service/build/md': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8
+[0.051s] [  1%] Built target md__cpp
+[0.051s] [  1%] Built target ament_cmake_python_symlink_md
+[0.054s] [ 11%] Built target md__rosidl_generator_c
+[0.078s] [ 35%] Built target md__rosidl_typesupport_introspection_c
+[0.078s] [ 35%] Built target md__rosidl_typesupport_cpp
+[0.079s] [ 41%] Built target md__rosidl_typesupport_fastrtps_cpp
+[0.079s] [ 50%] Built target md__rosidl_typesupport_introspection_cpp
+[0.082s] [ 60%] Built target md__rosidl_typesupport_c
+[0.082s] [ 70%] Built target md__rosidl_typesupport_fastrtps_c
+[0.091s] [35m[1mConsolidate compiler generated dependencies of target md_robot_node[0m
+[0.099s] [ 70%] Built target md
+[0.108s] [ 72%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o[0m
+[0.109s] [ 74%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o[0m
+[0.110s] [ 76%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o[0m
+[0.118s] [ 78%] Built target md__py
+[0.155s] [ 86%] Built target md__rosidl_generator_py
+[0.187s] [ 90%] Built target md__rosidl_typesupport_fastrtps_c__pyext
+[0.207s] [ 94%] Built target md__rosidl_typesupport_c__pyext
+[0.209s] [ 98%] Built target md__rosidl_typesupport_introspection_c__pyext
+[0.326s] running egg_info
+[0.327s] writing md.egg-info/PKG-INFO
+[0.327s] writing dependency_links to md.egg-info/dependency_links.txt
+[0.327s] writing top-level names to md.egg-info/top_level.txt
+[0.329s] reading manifest file 'md.egg-info/SOURCES.txt'
+[0.330s] writing manifest file 'md.egg-info/SOURCES.txt'
+[0.357s] [ 98%] Built target ament_cmake_python_build_md_egg
+[2.002s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.002s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.003s]                  from [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:1[m[K:
+[2.003s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:[m[K In function ‘[01m[Kint MdReceiveProc(MDRobotNode&)[m[K’:
+[2.003s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:108:56:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kint32_t*[m[K’ {aka ‘[01m[Kint*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.004s]   108 |                 RCLCPP_INFO(rclcpp::get_logger("com"), [01;35m[K"왼쪽 엔코더 : %d, 오른쪽 엔코더  %d"[m[K, [32m[K&node.getCurrPidMainData().mtr_pos_id1[m[K,&node.getCurrPidMainData().mtr_pos_id2);
+[2.004s]       |                                                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.004s]       |                                                                                               [32m[K|[m[K
+[2.004s]       |                                                                                               [32m[Kint32_t* {aka int*}[m[K
+[2.004s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:108:72:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.004s]   108 |                 RCLCPP_INFO(rclcpp::get_logger("com"), "왼쪽 엔코더 : [01;36m[K%d[m[K, 오른쪽 엔코더  %d", &node.getCurrPidMainData().mtr_pos_id1,&node.getCurrPidMainData().mtr_pos_id2);
+[2.004s]       |                                                                       [01;36m[K~^[m[K
+[2.004s]       |                                                                        [01;36m[K|[m[K
+[2.004s]       |                                                                        [01;36m[Kint[m[K
+[2.004s]       |                                                                       [32m[K%n[m[K
+[2.004s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.004s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.004s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.005s]                  from [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:1[m[K:
+[2.005s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:108:56:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kint32_t*[m[K’ {aka ‘[01m[Kint*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.005s]   108 |                 RCLCPP_INFO(rclcpp::get_logger("com"), [01;35m[K"왼쪽 엔코더 : %d, 오른쪽 엔코더  %d"[m[K, &node.getCurrPidMainData().mtr_pos_id1,[32m[K&node.getCurrPidMainData().mtr_pos_id2[m[K);
+[2.005s]       |                                                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.005s]       |                                                                                                                                      [32m[K|[m[K
+[2.005s]       |                                                                                                                                      [32m[Kint32_t* {aka int*}[m[K
+[2.005s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:108:91:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.005s]   108 |                 RCLCPP_INFO(rclcpp::get_logger("com"), "왼쪽 엔코더 : %d, 오른쪽 엔코더  [01;36m[K%d[m[K", &node.getCurrPidMainData().mtr_pos_id1,&node.getCurrPidMainData().mtr_pos_id2);
+[2.006s]       |                                                                                          [01;36m[K~^[m[K
+[2.006s]       |                                                                                           [01;36m[K|[m[K
+[2.006s]       |                                                                                           [01;36m[Kint[m[K
+[2.006s]       |                                                                                          [32m[K%n[m[K
+[8.522s] [100%] [32m[1mLinking CXX executable md_robot_node[0m
+[8.959s] [100%] Built target md_robot_node
+[8.967s] Invoked command in '/home/hyoin/service/build/md' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8
+[8.968s] Invoking command in '/home/hyoin/service/build/md': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --install /home/hyoin/service/build/md
+[8.973s] -- Install configuration: ""
+[8.973s] -- Execute custom install script
+[8.974s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/ament_index/resource_index/rosidl_interfaces/md
+[8.974s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__functions.h
+[8.974s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__struct.h
+[8.975s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__type_support.h
+[8.975s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__functions.h
+[8.975s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__struct.h
+[8.975s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__type_support.h
+[8.975s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__functions.h
+[8.975s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__struct.h
+[8.975s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__type_support.h
+[8.976s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/md_robot_msg1.h
+[8.976s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/md_robot_msg2.h
+[8.976s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/pose.h
+[8.976s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/rosidl_generator_c__visibility_control.h
+[8.976s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/environment/library_path.sh
+[8.976s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/environment/library_path.dsv
+[8.977s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__rosidl_typesupport_fastrtps_c.h
+[8.977s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__rosidl_typesupport_fastrtps_c.h
+[8.977s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__rosidl_typesupport_fastrtps_c.h
+[8.977s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.978s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__builder.hpp
+[8.978s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__struct.hpp
+[8.978s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__traits.hpp
+[8.978s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__type_support.hpp
+[8.978s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__builder.hpp
+[8.978s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__struct.hpp
+[8.978s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__traits.hpp
+[8.978s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__type_support.hpp
+[8.979s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__builder.hpp
+[8.979s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__struct.hpp
+[8.979s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__traits.hpp
+[8.979s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__type_support.hpp
+[8.979s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/md_robot_msg1.hpp
+[8.979s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/md_robot_msg2.hpp
+[8.979s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/pose.hpp
+[8.980s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.980s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__rosidl_typesupport_fastrtps_cpp.hpp
+[8.980s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__rosidl_typesupport_fastrtps_cpp.hpp
+[8.980s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp
+[8.980s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.981s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__rosidl_typesupport_introspection_c.h
+[8.981s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__rosidl_typesupport_introspection_c.h
+[8.981s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__rosidl_typesupport_introspection_c.h
+[8.981s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.981s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg1__rosidl_typesupport_introspection_cpp.hpp
+[8.982s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/md_robot_msg2__rosidl_typesupport_introspection_cpp.hpp
+[8.982s] -- Up-to-date symlink: /home/hyoin/service/install/md/include/md/md/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp
+[8.982s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/environment/pythonpath.sh
+[8.982s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/environment/pythonpath.dsv
+[8.983s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md-0.0.0-py3.10.egg-info/PKG-INFO
+[8.983s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.983s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.983s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md-0.0.0-py3.10.egg-info/top_level.txt
+[8.984s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/__init__.py
+[8.984s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/_md_s.ep.rosidl_typesupport_c.c
+[8.984s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/_md_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.984s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/_md_s.ep.rosidl_typesupport_introspection_c.c
+[8.984s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/libmd__rosidl_generator_py.so
+[8.984s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/md_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.984s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/md_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.984s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/md_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.985s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/msg/__init__.py
+[8.985s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/msg/_md_robot_msg1.py
+[8.985s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/msg/_md_robot_msg1_s.c
+[8.985s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/msg/_md_robot_msg2.py
+[8.985s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/msg/_md_robot_msg2_s.c
+[8.985s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/msg/_pose.py
+[8.986s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/msg/_pose_s.c
+[8.986s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/md_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.986s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/md_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.986s] -- Up-to-date symlink: /home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/md_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.986s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/msg/MdRobotMsg1.idl
+[8.986s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/msg/MdRobotMsg2.idl
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/msg/Pose.idl
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/msg/MdRobotMsg1.msg
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/msg/MdRobotMsg2.msg
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/msg/Pose.msg
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/lib//md_robot_node
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/include//md_robot_node/com.hpp
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/include//md_robot_node/global.hpp
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/include//md_robot_node/main.hpp
+[8.987s] -- Up-to-date symlink: /home/hyoin/service/install/md/include//md_robot_node/robot.hpp
+[8.988s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/launch/md_robot_node.launch.py
+[8.988s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/launch/md_robot_node_use_MDUI.launch.py
+[8.988s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/ament_index/resource_index/package_run_dependencies/md
+[8.988s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/ament_index/resource_index/parent_prefix_path/md
+[8.988s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/environment/ament_prefix_path.sh
+[8.989s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/environment/ament_prefix_path.dsv
+[8.989s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/environment/path.sh
+[8.989s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/environment/path.dsv
+[8.989s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/local_setup.bash
+[8.989s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/local_setup.sh
+[8.989s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/local_setup.zsh
+[8.989s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/local_setup.dsv
+[8.989s] -- Symlinking: /home/hyoin/service/install/md/share/md/package.dsv
+[8.995s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/ament_index/resource_index/packages/md
+[8.995s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/rosidl_cmake-extras.cmake
+[8.995s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.995s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.995s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/ament_cmake_export_libraries-extras.cmake
+[8.995s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/ament_cmake_export_targets-extras.cmake
+[8.995s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.996s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.996s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/mdConfig.cmake
+[8.996s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/cmake/mdConfig-version.cmake
+[8.996s] -- Up-to-date symlink: /home/hyoin/service/install/md/share/md/package.xml
+[8.996s] -- Up-to-date: /home/hyoin/service/install/md/lib/libmd__rosidl_generator_c.so
+[8.997s] -- Up-to-date: /home/hyoin/service/install/md/lib/libmd__rosidl_typesupport_fastrtps_c.so
+[8.997s] -- Up-to-date: /home/hyoin/service/install/md/lib/libmd__rosidl_typesupport_fastrtps_cpp.so
+[8.997s] -- Up-to-date: /home/hyoin/service/install/md/lib/libmd__rosidl_typesupport_introspection_c.so
+[8.997s] -- Up-to-date: /home/hyoin/service/install/md/lib/libmd__rosidl_typesupport_c.so
+[8.998s] -- Up-to-date: /home/hyoin/service/install/md/lib/libmd__rosidl_typesupport_introspection_cpp.so
+[8.998s] -- Up-to-date: /home/hyoin/service/install/md/lib/libmd__rosidl_typesupport_cpp.so
+[9.018s] Listing '/home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md'...
+[9.018s] Compiling '/home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/__init__.py'...
+[9.018s] Listing '/home/hyoin/service/install/md/local/lib/python3.10/dist-packages/md/msg'...
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/lib/libmd__rosidl_generator_py.so
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_generator_cExport.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_generator_cExport-noconfig.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_typesupport_fastrtps_cExport.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_generator_cppExport.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/md__rosidl_typesupport_introspection_cExport.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/md__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.022s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/md__rosidl_typesupport_cExport.cmake
+[9.023s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/md__rosidl_typesupport_cExport-noconfig.cmake
+[9.023s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/md__rosidl_typesupport_introspection_cppExport.cmake
+[9.023s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/md__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.023s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/md__rosidl_typesupport_cppExport.cmake
+[9.023s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/md__rosidl_typesupport_cppExport-noconfig.cmake
+[9.023s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_generator_pyExport.cmake
+[9.023s] -- Up-to-date: /home/hyoin/service/install/md/share/md/cmake/export_md__rosidl_generator_pyExport-noconfig.cmake
+[9.025s] Invoked command in '/home/hyoin/service/build/md' returned '0': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --install /home/hyoin/service/build/md

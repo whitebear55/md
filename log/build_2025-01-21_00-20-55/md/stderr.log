@@ -1,0 +1,12 @@
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:[m[K In function ‘[01m[Kint MdReceiveProc(MDRobotNode&)[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:113:106:[m[K [01;31m[Kerror: [m[K‘[01m[KpData[m[K’ was not declared in this scope; did you mean ‘[01m[KpRcvData[m[K’?
+  113 |                 std::unique_ptr<std::pair<std::array<double, 2>, double>> result = RPMToRobotSpeed(node, [01;31m[KpData[m[K);
+      |                                                                                                          [01;31m[K^~~~~[m[K
+      |                                                                                                          [32m[KpRcvData[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:113:84:[m[K [01;31m[Kerror: [m[K‘[01m[KRPMToRobotSpeed[m[K’ was not declared in this scope
+  113 |                 std::unique_ptr<std::pair<std::array<double, 2>, double>> result = [01;31m[KRPMToRobotSpeed[m[K(node, pData);
+      |                                                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:90: CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o] 오류 1
+gmake[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+gmake: *** [Makefile:146: all] 오류 2

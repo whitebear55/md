@@ -1,0 +1,37 @@
+[  3%] Built target md__cpp
+[ 11%] Built target md__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_symlink_md
+[ 21%] Built target md__rosidl_typesupport_cpp
+[ 31%] Built target md__rosidl_typesupport_fastrtps_cpp
+[ 43%] Built target md__rosidl_typesupport_introspection_cpp
+[ 50%] Built target md__rosidl_typesupport_introspection_c
+[ 60%] Built target md__rosidl_typesupport_c
+[ 70%] Built target md__rosidl_typesupport_fastrtps_c
+[35m[1mConsolidate compiler generated dependencies of target md_robot_node[0m
+[ 70%] Built target md
+[ 72%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o[0m
+[ 78%] Built target md__py
+[ 86%] Built target md__rosidl_generator_py
+[ 90%] Built target md__rosidl_typesupport_fastrtps_c__pyext
+[ 94%] Built target md__rosidl_typesupport_introspection_c__pyext
+[ 98%] Built target md__rosidl_typesupport_c__pyext
+running egg_info
+writing md.egg-info/PKG-INFO
+writing dependency_links to md.egg-info/dependency_links.txt
+writing top-level names to md.egg-info/top_level.txt
+reading manifest file 'md.egg-info/SOURCES.txt'
+writing manifest file 'md.egg-info/SOURCES.txt'
+[ 98%] Built target ament_cmake_python_build_md_egg
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:[m[K In function ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_PNT_MAIN_DATA_t*)[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:127:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+  127 |     v_left*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:128:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+  128 |     v_right*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:104: CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o] 오류 1
+gmake[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+gmake: *** [Makefile:146: all] 오류 2

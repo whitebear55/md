@@ -1,0 +1,37 @@
+In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:2[m[K:
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotStatus_msg[m[K’ does not name a type
+   67 |     [01;31m[KRobotStatus_msg[m[K md_robot_status_msg;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:3[m[K:
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotStatus_msg[m[K’ does not name a type
+   67 |     [01;31m[KRobotStatus_msg[m[K md_robot_status_msg;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:2[m[K:
+[01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotStatus_msg[m[K’ does not name a type
+   67 |     [01;31m[KRobotStatus_msg[m[K md_robot_status_msg;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:[m[K In function ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_PNT_MAIN_DATA_t*)[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+  105 |         [01;31m[Kold_mtr_pos_id1[m[K = pData->mtr_pos_id1;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:106:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+  106 |         [01;31m[Kold_mtr_pos_id2[m[K = pData->mtr_pos_id2;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:120:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+  120 |     v_left = (double)(pos_left - [01;31m[Kold_mtr_pos_id1[m[K);  // 왼쪽 엔코더 카운트 값
+      |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:121:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+  121 |     v_right = (double)(pos_right - [01;31m[Kold_mtr_pos_id2[m[K); // 오른쪽 엔코더 카운트 값
+      |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:123:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+  123 |     v_left*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:124:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+  124 |     v_right*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:90: CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o] 오류 1
+gmake[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:104: CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o] 오류 1
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:76: CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o] 오류 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+gmake: *** [Makefile:146: all] 오류 2

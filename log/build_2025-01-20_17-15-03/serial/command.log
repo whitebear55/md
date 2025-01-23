@@ -1,0 +1,6 @@
+Invoking command in '/home/hyoin/service/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hyoin/service/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyoin/service/install/serial
+Invoked command in '/home/hyoin/service/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hyoin/service/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyoin/service/install/serial
+Invoking command in '/home/hyoin/service/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/serial -- -j8 -l8
+Invoked command in '/home/hyoin/service/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyoin/service/build/serial -- -j8 -l8
+Invoking command in '/home/hyoin/service/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/serial
+Invoked command in '/home/hyoin/service/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyoin/service/build/serial

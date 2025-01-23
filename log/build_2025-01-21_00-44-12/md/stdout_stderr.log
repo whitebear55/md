@@ -1,0 +1,31 @@
+[  9%] Built target md__rosidl_generator_c
+[ 11%] Built target md__cpp
+[ 11%] Built target ament_cmake_python_symlink_md
+[ 21%] Built target md__rosidl_typesupport_fastrtps_c
+[ 31%] Built target md__rosidl_typesupport_introspection_c
+[ 41%] Built target md__rosidl_typesupport_fastrtps_cpp
+[ 50%] Built target md__rosidl_typesupport_cpp
+[ 60%] Built target md__rosidl_typesupport_c
+[ 70%] Built target md__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target md_robot_node[0m
+[ 70%] Built target md
+[ 72%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o[0m
+[ 74%] Built target md__py
+[ 82%] Built target md__rosidl_generator_py
+[ 86%] Built target md__rosidl_typesupport_fastrtps_c__pyext
+[ 90%] Built target md__rosidl_typesupport_c__pyext
+[ 94%] Built target md__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing md.egg-info/PKG-INFO
+writing dependency_links to md.egg-info/dependency_links.txt
+writing top-level names to md.egg-info/top_level.txt
+reading manifest file 'md.egg-info/SOURCES.txt'
+writing manifest file 'md.egg-info/SOURCES.txt'
+[ 94%] Built target ament_cmake_python_build_md_egg
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:[m[K In function ‘[01m[Kint MdReceiveProc(MDRobotNode&)[m[K’:
+[01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:113:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurr_pid_pnt_main_data[m[K’ was not declared in this scope
+  113 |                 memcpy((char *)&[01;31m[Kcurr_pid_pnt_main_data[m[K, (char *)pRcvData, sizeof(PID_PNT_MAIN_DATA_t));
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:90: CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o] 오류 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+gmake: *** [Makefile:146: all] 오류 2

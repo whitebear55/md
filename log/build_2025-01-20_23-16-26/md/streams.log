@@ -1,0 +1,65 @@
+[0.027s] Invoking command in '/home/hyoin/service/build/md': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8
+[0.069s] [  1%] Built target md__cpp
+[0.072s] [ 11%] Built target md__rosidl_generator_c
+[0.077s] [ 11%] Built target ament_cmake_python_symlink_md
+[0.094s] [ 21%] Built target md__rosidl_typesupport_cpp
+[0.101s] [ 31%] Built target md__rosidl_typesupport_introspection_cpp
+[0.101s] [ 50%] Built target md__rosidl_typesupport_fastrtps_c
+[0.101s] [ 50%] Built target md__rosidl_typesupport_fastrtps_cpp
+[0.105s] [ 60%] Built target md__rosidl_typesupport_introspection_c
+[0.108s] [ 70%] Built target md__rosidl_typesupport_c
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target md_robot_node[0m
+[0.127s] [ 70%] Built target md
+[0.137s] [ 72%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o[0m
+[0.137s] [ 74%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o[0m
+[0.137s] [ 76%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o[0m
+[0.148s] [ 78%] Built target md__py
+[0.175s] [ 86%] Built target md__rosidl_generator_py
+[0.208s] [ 90%] Built target md__rosidl_typesupport_fastrtps_c__pyext
+[0.216s] [ 94%] Built target md__rosidl_typesupport_c__pyext
+[0.216s] [ 98%] Built target md__rosidl_typesupport_introspection_c__pyext
+[0.339s] running egg_info
+[0.340s] writing md.egg-info/PKG-INFO
+[0.343s] writing dependency_links to md.egg-info/dependency_links.txt
+[0.343s] writing top-level names to md.egg-info/top_level.txt
+[0.345s] reading manifest file 'md.egg-info/SOURCES.txt'
+[0.346s] writing manifest file 'md.egg-info/SOURCES.txt'
+[0.374s] [ 98%] Built target ament_cmake_python_build_md_egg
+[1.931s] In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/main.cpp:2[m[K:
+[1.931s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotStatus_msg[m[K’ does not name a type
+[1.931s]    67 |     [01;31m[KRobotStatus_msg[m[K md_robot_status_msg;
+[1.931s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.932s] In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:3[m[K:
+[1.933s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotStatus_msg[m[K’ does not name a type
+[1.933s]    67 |     [01;31m[KRobotStatus_msg[m[K md_robot_status_msg;
+[1.933s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.943s] In file included from [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:2[m[K:
+[1.943s] [01m[K/home/hyoin/service/src/md/include/md_robot_node/main.hpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotStatus_msg[m[K’ does not name a type
+[1.943s]    67 |     [01;31m[KRobotStatus_msg[m[K md_robot_status_msg;
+[1.943s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.015s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:[m[K In function ‘[01m[Kvoid MakeMDRobot_Status_Message(MDRobotNode&, PID_PNT_MAIN_DATA_t*)[m[K’:
+[2.015s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+[2.015s]   105 |         [01;31m[Kold_mtr_pos_id1[m[K = pData->mtr_pos_id1;
+[2.015s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.019s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:106:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+[2.019s]   106 |         [01;31m[Kold_mtr_pos_id2[m[K = pData->mtr_pos_id2;
+[2.019s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.024s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:120:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id1[m[K’ was not declared in this scope
+[2.024s]   120 |     v_left = (double)(pos_left - [01;31m[Kold_mtr_pos_id1[m[K);  // 왼쪽 엔코더 카운트 값
+[2.024s]       |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.028s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:121:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kold_mtr_pos_id2[m[K’ was not declared in this scope
+[2.028s]   121 |     v_right = (double)(pos_right - [01;31m[Kold_mtr_pos_id2[m[K); // 오른쪽 엔코더 카운트 값
+[2.028s]       |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.028s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:123:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+[2.028s]   123 |     v_left*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+[2.028s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.028s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/robot.cpp:124:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ROBOT_PARAMETER_t[m[K’ has no member named ‘[01m[Kmotor_count_per_degree[m[K’
+[2.028s]   124 |     v_right*= robotParamData.[01;31m[Kmotor_count_per_degree[m[K; // 엔코더 카운트 값을 각도로 변환
+[2.028s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.314s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:90: CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o] 오류 1
+[2.314s] gmake[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+[2.346s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:104: CMakeFiles/md_robot_node.dir/src/md_robot_node/robot.cpp.o] 오류 1
+[4.302s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:76: CMakeFiles/md_robot_node.dir/src/md_robot_node/main.cpp.o] 오류 1
+[4.302s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+[4.302s] gmake: *** [Makefile:146: all] 오류 2
+[4.304s] Invoked command in '/home/hyoin/service/build/md' returned '2': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8

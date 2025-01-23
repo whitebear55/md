@@ -1,0 +1,11 @@
+{
+  "package_name": "turtlebot3_msgs",
+  "non_idl_tuples": [
+    "/home/hyoin/service/src/turtlebot3_msgs:msg/SensorState.msg",
+    "/home/hyoin/service/src/turtlebot3_msgs:msg/Sound.msg",
+    "/home/hyoin/service/src/turtlebot3_msgs:msg/VersionInfo.msg",
+    "/home/hyoin/service/src/turtlebot3_msgs:srv/Sound.srv",
+    "/home/hyoin/service/src/turtlebot3_msgs:srv/Dqn.srv",
+    "/home/hyoin/service/src/turtlebot3_msgs:action/Patrol.action"
+  ]
+}

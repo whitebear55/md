@@ -1,0 +1,6 @@
+msg/MdRobotMsg1.idl
+msg/MdRobotMsg1.msg
+msg/MdRobotMsg2.idl
+msg/MdRobotMsg2.msg
+msg/Pose.idl
+msg/Pose.msg

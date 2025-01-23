@@ -1,0 +1,34 @@
+[0.017s] Invoking command in '/home/hyoin/service/build/md': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8
+[0.061s] [  1%] Built target md__cpp
+[0.065s] [ 11%] Built target md__rosidl_generator_c
+[0.074s] [ 11%] Built target ament_cmake_python_symlink_md
+[0.089s] [ 21%] Built target md__rosidl_typesupport_introspection_cpp
+[0.089s] [ 31%] Built target md__rosidl_typesupport_cpp
+[0.090s] [ 41%] Built target md__rosidl_typesupport_fastrtps_cpp
+[0.091s] [ 50%] Built target md__rosidl_typesupport_fastrtps_c
+[0.094s] [ 60%] Built target md__rosidl_typesupport_introspection_c
+[0.096s] [ 70%] Built target md__rosidl_typesupport_c
+[0.105s] [35m[1mConsolidate compiler generated dependencies of target md_robot_node[0m
+[0.112s] [ 70%] Built target md
+[0.125s] [ 72%] [32mBuilding CXX object CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o[0m
+[0.131s] [ 74%] Built target md__py
+[0.158s] [ 82%] Built target md__rosidl_generator_py
+[0.186s] [ 90%] Built target md__rosidl_typesupport_fastrtps_c__pyext
+[0.186s] [ 90%] Built target md__rosidl_typesupport_introspection_c__pyext
+[0.191s] [ 94%] Built target md__rosidl_typesupport_c__pyext
+[0.278s] running egg_info
+[0.279s] writing md.egg-info/PKG-INFO
+[0.279s] writing dependency_links to md.egg-info/dependency_links.txt
+[0.279s] writing top-level names to md.egg-info/top_level.txt
+[0.281s] reading manifest file 'md.egg-info/SOURCES.txt'
+[0.281s] writing manifest file 'md.egg-info/SOURCES.txt'
+[0.300s] [ 94%] Built target ament_cmake_python_build_md_egg
+[1.776s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:[m[K In function ‘[01m[Kint MdReceiveProc(MDRobotNode&)[m[K’:
+[1.776s] [01m[K/home/hyoin/service/src/md/src/md_robot_node/com.cpp:113:84:[m[K [01;31m[Kerror: [m[K‘[01m[KRPMToRobotSpeed[m[K’ was not declared in this scope
+[1.776s]   113 | ique_ptr<std::pair<std::array<double, 2>, double>> result = [01;31m[KRPMToRobotSpeed[m[K(node, &node.getCurrPidMainData());
+[1.776s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.777s] 
+[2.064s] gmake[2]: *** [CMakeFiles/md_robot_node.dir/build.make:90: CMakeFiles/md_robot_node.dir/src/md_robot_node/com.cpp.o] 오류 1
+[2.064s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/md_robot_node.dir/all] 오류 2
+[2.064s] gmake: *** [Makefile:146: all] 오류 2
+[2.066s] Invoked command in '/home/hyoin/service/build/md' returned '2': AMENT_PREFIX_PATH=/home/hyoin/service/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyoin/service/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/hyoin/service/install/serial/lib:${LD_LIBRARY_PATH} PATH=/home/hyoin/service/install/serial/bin:${PATH} /usr/bin/cmake --build /home/hyoin/service/build/md -- -j8 -l8

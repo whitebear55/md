@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from md/msg/Pose.msg
+// generated code does not contain a copyright notice
+
+
+module md {
+  module msg {
+    struct Pose {
+      float x;
+
+      float y;
+
+      float theta;
+
+      float linear_velocity;
+
+      float angular_velocity;
+
+      uint8 us_1;
+
+      uint8 us_2;
+
+      uint8 us_3;
+
+      uint8 us_4;
+
+      uint8 platform_state;
+
+      uint8 left_motor_state;
+
+      uint8 right_motor_state;
+    };
+  };
+};

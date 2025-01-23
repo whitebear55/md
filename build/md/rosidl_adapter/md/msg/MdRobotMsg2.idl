@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from md/msg/MdRobotMsg2.msg
+// generated code does not contain a copyright notice
+
+
+module md {
+  module msg {
+    struct MdRobotMsg2 {
+      double interval_time;
+
+      int32 x_pos;
+
+      int32 y_pos;
+
+      int16 angule;
+
+      uint8 us_1;
+
+      uint8 us_2;
+
+      uint8 us_3;
+
+      uint8 us_4;
+
+      uint8 platform_state;
+
+      int16 linear_velocity;
+
+      int16 angular_velocity;
+
+      float input_voltage;
+    };
+  };
+};
